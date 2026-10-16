@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title> video games </title>
+
+<link rel= "stylesheet" type= text/css href="styles.css"> 
+
+ 
+ <!-- navigation bar --> 
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="sports.html">Sports</a>
+  <a href="mind.html">Mind-Stimulating</a>
+  <a href="card.html">Card Games</a>
+  <a href="board.html">Board Games</a>
+  <a href="video.html">Video Games</a>
+  <a href="generic.html">Generic</a>
+
+
+
+</div>
+
+ <!-- title --> 
+ 
+ <h1 style = "text-align: center; color:  #24c54c;"
+ > ~Video Games~
+</h1>
+
+
+<h4 style = "text-align: center; color:  white;"> <span style = "text-transform: uppercase;"> Click on the activity box to join and it should turn <span style = "color: #24c54c; text-align: center;"> green. </span>  </h4> 
+
+<br>
+
+
+<h4 style="text-align: center;">
+	<a href="submit.html" class="button">Create Your Own Activity</a>
+</h4>
+
+<br>
+
+    <style>
+       .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: #f0f0f0; /* Initial card color */
+            padding: 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            width: calc(25% - 20px); /* 25% width for 4 cards per row */
+            margin-bottom: 20px;
+        }
+        
+        /* Define styles for the cards when clicked */
+        .card.clicked {
+            background-color: #24c54c; /* New card color when clicked */
+            color: #fff; /* Text color when clicked */
+        }
+
+		body{
+			background-color: #8552B2 ;
+		}
+        
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <p>Activity: WII sports</p>
+			<p>	Location: College Avenue Clothier Dorms</p>
+				<p>Time: 3:45pm</p>
+				<img src="WII.jpeg" alt="Card Image">
+			
+        </div>
+        <div class="card">
+            <p>Activity: Halo</p>
+			<p>	Location: Busch BEST EAST </p>
+				<p>Time: 4am</p>
+				<img src="bhalo.jpg" alt="Card Image"></p>
+            </div>
+        <div class="card">
+            <p>Activity: Fifa</p>
+			<p>	Location: College Ave Miller Hall</p>
+				<p>Time: 9:30pm</p>
+				<img src="bfifa.png" alt="Card Image">
+        </div>
+        <div class="card">
+            <p>Activity: Forza</p>
+			<p>	Location: Busch Student Center</p>
+				<p>Time: 12:30pm</p>
+				<img src="forza.jpeg" alt="Card Image">
+        </div>
+        <div class="card">
+            <p>Activity: Minecraft</p>
+			<p>	Location: Douglass Gibson Apartments</p>
+				<p>Time: 4am</p>
+				<img src="minecraftttt.jpg" alt="Card Image">
+        </div>
+      
+        
+        
+     
+        <!-- Add more card elements as needed -->
+    </div>
+
+    <script>
+        // Get references to all the card elements
+        const cards = document.querySelectorAll('.card');
+
+        // Function to handle card click and toggle styles
+        function toggleCard(card) {
+            // Toggle the 'clicked' class to change the card's color
+            card.classList.toggle('clicked');
+        }
+
+        // Add a click event listener to each card
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                toggleCard(card);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
