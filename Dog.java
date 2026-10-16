@@ -185,7 +185,7 @@ public class Dog implements ActionListener {
         if (cmd.equals(Actions.enter.name())) {
             Dog.findGolden();
             Dog.findLab();
-            Dog.findBullDog();
+            Dog.findBulldog();
             Dog.findPoodle();
             Dog.findChicha();
             Dog.findPitbull();
