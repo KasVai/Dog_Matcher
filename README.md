@@ -1,35 +1,33 @@
 # Dog Matcher 🐾
 
 ## About the Project
-The **Dog Matcher** project is an interactive, Java-backed application designed to streamline the process of connecting potential pet owners with compatible dogs. By evaluating specific traits, preferences, or criteria, the system helps match users with dogs that fit their lifestyle, living situation, or specific requirements.
-
-In addition to its robust Java backend, the project integrates lightweight web assets (`.html` and `.css`) to deliver an engaging user interface complete with visual styling and multimedia support.
+The **Dog Matcher** project is an interactive, Java-backed desktop application designed to streamline the process of connecting potential pet owners with compatible dogs[cite: 1, 2, 4]. By evaluating specific traits, preferences, and criteria through a graphical user interface (GUI), the system helps match users with dogs that fit their lifestyle[cite: 2, 4].
 
 ---
 
 ## Project Architecture & File Structure
 
-The project is organized into clean backend logic and frontend presentation components:
+The project is organized into core backend matching logic, a desktop GUI, and supplementary assets:
 
-* **`Dog.java`**: Acts as the core data model. This class defines the attributes of an individual dog profile (such as age, breed, temperament, or size) and includes inner classes/methods (`dog$Actions`) to handle specific behavioral rules or profile states.
-* **`DogFinder.java`**: The core algorithmic and search engine of the application. It processes user queries, iterates through available dog records, computes compatibility, and outputs the optimal matches.
-* **`styles.css`**: Provides the aesthetic framework for the web-facing parts of the application, ensuring a clean, responsive, and visually appealing user experience.
+- **`Dog.java`**: The primary Java Swing GUI class that builds the application window, layout, buttons, and handles user event interactions.
+- **`DogFinder.java`**: The core algorithmic matching engine that processes user choices, evaluates breed criteria, and computes the optimal match[cite: 4].
+- **`styles.css`**: A stylesheet included in the repository for potential future web implementations[cite: 3].
 ---
 
 ## Key Features
-* **Object-Oriented Profile Management:** Leverages Java classes to manage individual animal profiles and behaviors seamlessly.
-* **Custom Search & Filtering Logic:** Built-in engine to filter and sort through records to find optimal pairings. 
-* **Multimedia Integration:** Includes web pages and styling to support video displays and interactive browsing.
+- **Interactive Java Swing GUI:** A clean desktop interface with clickable buttons and real-time choice tracking[cite: 2].
+- **Custom Search & Filtering Logic:** A built-in matching engine to filter and compare user selections against a database of dog breeds[cite: 4].
+- **Object-Oriented Architecture:** Clean separation of UI rendering (`Dog.java`) and algorithmic matching logic (`DogFinder.java`)[cite: 2, 4].
 
 ---
 
 ## Getting Started & Installation
 
 ### Prerequisites
-* Ensure you have the **Java Development Kit (JDK)** installed on your machine.
+- Ensure you have the **Java Development Kit (JDK)** installed on your machine.
 
 ### Compilation and Execution
-1. Open your terminal or command line interface and navigate to the directory containing your project source files.
-2. Compile the Java source files using the Java compiler:
+1. Open your terminal or command line interface and navigate to the directory containing your project source files[cite: 2, 4].
+2. Compile the Java source files using the Java compiler[cite: 2, 4]:
    ```bash
    javac Dog.java DogFinder.java
